@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResearchMind | Dr. Sonal R Katyal</title>
+    <title>ResearchMind Toolkit | Dr. Sonal R Katyal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -36,57 +36,64 @@
         .amber { background: #fffff0; border-left: 8px solid var(--amber); color: #744210; }
         .red { background: #fff5f5; border-left: 8px solid var(--red); color: #822727; }
         
-        .formula { background: #2d3748; color: white; padding: 25px; border-radius: 12px; text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 1.2rem; }
-        .formula span { color: #63b3ed; font-weight: bold; }
+        .prompt-box { background: #edf2f7; border: 2px dashed var(--secondary); padding: 20px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; color: #4a5568; margin-bottom: 20px; max-height: 200px; overflow-y: auto; white-space: pre-wrap; }
+        .btn { display: inline-block; background: var(--secondary); color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: 0.3s; cursor: pointer; border: none; font-size: 1rem; }
+        .btn:hover { background: var(--primary); transform: translateY(-2px); }
+        .btn-copy { background: #4a5568; }
 
         .footer { text-align: center; padding: 40px; color: #718096; font-size: 0.9rem; }
-        .btn { display: inline-block; background: var(--secondary); color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: 0.3s; margin-top: 20px; }
-        .btn:hover { background: var(--primary); transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ResearchMind</h1>
-    <p>Ethical Use of AI in Academic Research</p>
+    <h1>ResearchMind Toolkit</h1>
+    <p>Ethical AI in Academic Research</p>
     <p style="font-size: 1rem; opacity: 0.8;">Developed by Dr. Sonal R Katyal <br> Program Director, Faculty of Transformational Economics, James Lind Institute, Geneva</p>
 </header>
 
 <div class="container">
     
     <div class="card">
+        <h2><i class="fas fa-robot"></i> Use the AI Agent</h2>
+        <p>Since high-quality AI "brains" require paid credits, I am providing you with my <strong>Expert Agent Prompt</strong> for free. Copy the text below and paste it into <strong>ChatGPT, Claude, or Gemini</strong> to turn it into your personal Research Ethics Auditor.</p>
+        
+        <div class="prompt-box" id="promptText">You are the "ResearchMind AI Agent," a specialized academic auditor based on the framework by Dr. Sonal R Katyal. Your goal is to audit AI use in research. 
+
+1. Use the Traffic Light System: 🟢 GREEN (Ethical), 🟡 AMBER (Caution), 🔴 RED (Violation).
+2. Enforce the 3 Rules: DISCLOSE, LOG, and OWN.
+3. Use the Precision Prompting Formula: ROLE -> TASK -> CONTEXT -> CONSTRAINT.
+4. Guide users through a Citation Verification Protocol to avoid hallucinations.
+5. Help draft Methodology Disclosure statements.
+6. Run a final Section 8 Self-Assessment Checklist.
+
+Tone: Professional, academic, and strict regarding integrity.</div>
+        
+        <button class="btn btn-copy" onclick="copyPrompt()"><i class="fas fa-copy"></i> Copy Auditor Prompt</button>
+    </div>
+
+    <div class="card">
         <h2><i class="fas fa-gavel"></i> The Three Non-Negotiable Rules</h2>
-        <p>Regardless of the AI tool used, these three rules apply universally to all academic research:</p>
         <div class="rules-grid">
             <div class="rule-item"><strong>1. DISCLOSE</strong>Document the name, version, and purpose of every AI tool used.</div>
-            <div class="rule-item"><strong>2. LOG</strong>Maintain an audit trail of prompts and outputs as evidence of responsible use.</div>
-            <div class="rule-item"><strong>3. OWN</strong>Every claim must be traceable to your own judgment. You must be able to defend it.</div>
+            <div class="rule-item"><strong>2. LOG</strong>Maintain an audit trail of prompts and outputs.</div>
+            <div class="rule-item"><strong>3. OWN</strong>Every claim must be traceable to your own judgment.</div>
         </div>
     </div>
 
     <div class="card">
         <h2><i class="fas fa-traffic-light"></i> AI Use Classification</h2>
-        <p>Use this framework to self-assess the ethical risk of your AI integration:</p>
         <div class="traffic-light">
-            <div class="light green"><strong>🟢 GREEN (Ethical):</strong> Grammar checking, literature mapping, and statistical analysis. (Disclosure Required)</div>
-            <div class="light amber"><strong>🟡 AMBER (Caution):</strong> AI-generated first drafts or summaries. (Substantial rewriting & disclosure required)</div>
-            <div class="light red"><strong>🔴 RED (Violation):</strong> Submitting AI text as your own or using fabricated citations. (Academic Misconduct)</div>
+            <div class="light green"><strong>🟢 GREEN (Ethical):</strong> Grammar checking, literature mapping. (Disclosure Required)</div>
+            <div class="light amber"><strong>🟡 AMBER (Caution):</strong> AI-generated first drafts or summaries. (Substantial rewrite required)</div>
+            <div class="light red"><strong>🔴 RED (Violation):</strong> Submitting AI text as own work. (Academic Misconduct)</div>
         </div>
-    </div>
-
-    <div class="card">
-        <h2><i class="fas fa-magic"></i> Precision Prompting Formula</h2>
-        <p>To ensure reliability and reduce hallucinations, use this 4-part structure for every prompt:</p>
-        <div class="formula">
-            <span>ROLE</span> &rarr; <span>TASK</span> &rarr; <span>CONTEXT</span> &rarr; <span>CONSTRAINT</span>
-        </div>
-        <p style="text-align: center; margin-top: 15px; font-style: italic; font-size: 0.9rem;">Example: "Act as a peer reviewer (Role), identify limitations (Task), for a PhD in Economics (Context), using only peer-reviewed sources (Constraint)."</p>
     </div>
 
     <div class="card" style="text-align: center;">
         <h2><i class="fas fa-file-pdf"></i> Full Framework Guide</h2>
-        <p>Download the complete Practical Guide for Researchers and Doctoral Students for detailed protocols on citation verification and data privacy.</p>
-        <a href="https://github.com/drsonakatyal/researchmind/raw/main/AI_Research_Ethics_Guide_DrSonalKatyal.docx" class="btn"><i class="fas fa-download"></i> Download Full Word Guide</a>
+        <p>Download the complete Practical Guide for Researchers and Doctoral Students.</p>
+        <a href="https://github.com/drsonakatyal/researchmind/raw/main/AI_Research_Ethics_Guide_DrSonalKatyal.docx" class="btn"><i class="fas fa-download"></i> Download Word Guide</a>
     </div>
 
 </div>
@@ -95,6 +102,14 @@
     &copy; 2026 Dr. Sonal R Katyal | James Lind Institute, Geneva, Switzerland <br>
     sonal.katyal@jliedu.ch
 </div>
+
+<script>
+function copyPrompt() {
+    var copyText = document.getElementById("promptText").innerText;
+    navigator.clipboard.writeText(copyText);
+    alert("Prompt copied! Now paste this into ChatGPT, Claude, or Gemini to start your audit.");
+}
+</script>
 
 </body>
 </html>
