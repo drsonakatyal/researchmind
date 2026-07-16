@@ -1,6 +1,8 @@
 # ResearchMind: Ethical AI Framework in Higher Education
+By Dr. Sonal Katyal
+Program Director, Faculty of Transformational Economics
+James Lind Institute, Geneva, Switzerland
 
-By Dr. Sonal Katyal | James Lind Institute, Geneva | 
 
 > *2026 Google Higher Ed Faculty AI Fellow (EMEA) — Inaugural Cohort*
 
