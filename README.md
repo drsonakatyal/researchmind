@@ -8,10 +8,7 @@
 
 ## What Is ResearchMind?
 
-ResearchMind is a practical, open-access ethical AI framework designed for 
-doctoral students, academic researchers, and faculty navigating the integration 
-of artificial intelligence into academic research and dissertation writing.
-
+ResearchMind is an open-access ethical AI framework that helps researchers, doctoral students, faculty, and higher education institutions integrate generative AI responsibly into academic research, dissertation writing, teaching, and scholarly practice. It provides practical guidance on research integrity, AI governance, prompt design, citation verification, and transparent AI use throughout the research lifecycle.
 Built by Dr. Sonal Katyal — PhD Economist, Program Director at the Faculty of 
 Transformational Economics, James Lind Institute Geneva — this framework is 
 grounded in two international AI in Research workshops delivered to researcher 
@@ -99,6 +96,17 @@ If you use this framework in your research or teaching, please cite:
 > https://drsonakatyal.github.io/researchmind/
 
 ---
+## Who is ResearchMind for?
+
+- Doctoral Researchers
+- Master's Students
+- Academic Faculty
+- Supervisors
+- Universities
+- Research Institutions
+- Ethics Committees
+- Academic Publishers
+  ResearchMind is intended to support—not replace—institutional academic integrity policies, publisher guidelines, ethics review processes, and researcher judgment. Users should always comply with the requirements of their institution, funder, and publisher.
 
 ## License
 
