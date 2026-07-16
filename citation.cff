@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "ResearchMind: An Ethical AI Framework for Academic Research and Higher Education"
+message: "If you use ResearchMind in your research, teaching, or publications, please cite it using the metadata below."
+type: software
+
+authors:
+  - family-names: Katyal
+    given-names: Sonal
+
+abstract: >
+  ResearchMind is an open-access ethical AI framework designed to support
+  responsible AI use in academic research, higher education, dissertation
+  writing, research integrity, and AI governance.
+
+version: "1.0.0"
+
+date-released: "2026-07-16"
+
+license: "CC-BY-4.0"
+
+repository-code: "https://github.com/drsonakatyal/researchmind"
+
+url: "https://drsonakatyal.github.io/researchmind"
+
+keywords:
+  - AI Ethics
+  - Higher Education
+  - Academic Research
+  - Responsible AI
+  - Research Integrity
+  - AI Governance
+  - Dissertation Writing
+  - Research Methodology
+  - Generative AI
+  - ResearchMind
